@@ -1,0 +1,48 @@
+/* Home Page - Styles */
+.home-card-grid {
+  display: flex;
+  gap: 40px;
+  margin-top: 80px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.home-card-times,
+.home-card-location,
+.home-card-reservation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  height: 210px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.home-card-times {
+  border-top: 4px solid var(--color-orange);
+}
+
+.home-card-location {
+  border-top: 4px solid var(--color-pink);
+}
+
+.home-card-reservation {
+  border-top: 4px solid var(--text-aqua-color);
+}
+
+.home-card-icon {
+  font-size: 30px;
+}
+.home-card-headline {
+  color: var(--text-highlight-color);
+  margin-bottom: 6px;
+}
+.home-card-text {
+  color: var(--text-primary-color);
+  margin-bottom: 3px;
+}

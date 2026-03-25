@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #1a2540;
+  --secondary-color: #0e172a;
+  --highlight-color: #e7272a;
+  --text-highlight-color: #fbbf23;
+  --text-primary-color: #8ba1c4;
+  --text-white-color: #ffff;
+  --text-aqua-color: #0a91b3;
+  --color-orange: #fa7315;
+  --color-pink: #ec4899;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+}
+
+/* General styles */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 3px solid var(--highlight-color);
+  background-color: var(--primary-color);
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+.logo {
+  font-weight: 800;
+  p {
+    color: var(--text-white-color);
+  }
+  span {
+    color: var(--text-highlight-color);
+  }
+}
+
+button {
+  border: 1px solid var(--text-primary-color);
+  color: var(--text-primary-color);
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 10px 30px;
+  font-weight: 800;
+  min-width: 112px; /* ensures button is at least this wide */
+  height: 37.5px; /* uniform height for all buttons */
+}
+
+button:hover {
+  border: 1px solid var(--text-white-color);
+  background-color: var(--highlight-color);
+  color: var(--text-white-color);
+}
+
+button:active {
+  border: 1px solid var(--text-white-color);
+  background-color: var(--highlight-color);
+  color: var(--text-white-color);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Home Page - Hero */
+.home-hero {
+  text-align: center;
+}
+
+.home-headline {
+  font-size: 68px;
+  font-weight: 800;
+  color: var(--text-white-color);
+
+  span {
+    color: var(--text-highlight-color);
+  }
+}
+
+.home-subheadline {
+  color: var(--text-aqua-color);
+  margin-bottom: 30px;
+}
+
+.btn-see-menu {
+  color: var(--text-white-color);
+  border-radius: 8px;
+  border: none;
+  background-color: var(--highlight-color);
+  padding: 10px 30px;
+  font-weight: 800;
+  min-width: 112px;
+  height: 37.5px;
+}
+
+/* Footer - Styles */
+
+.footer {
+  border-top: 3px solid var(--highlight-color);
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 10px;
+  font-size: 20px;
+  gap: 10px;
+  color: var(--text-primary-color);
+}
+.restaurant-name {
+  color: var(--text-highlight-color);
+}
